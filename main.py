@@ -9,8 +9,12 @@ app = FastAPI()
 def index():
     return {'Data': {'message': 'Hello World!'}}
 
+@app.get('/blog/{id}')
 
-@app.get('/about')
+def show(id: int):
+    return {'Data': id}
 
-def about():
-    return {'Data': {'message': 'This is a simple FastAPI application.'}}
+@app.get('/orders/{id}/items')
+
+def items(id: int):
+    return {'Data': id}

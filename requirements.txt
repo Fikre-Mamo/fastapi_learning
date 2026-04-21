@@ -1,0 +1,5 @@
+annotated-types==0.7.0
+anyio==4.13.0
+fastapi==0.136.0
+pydantic==2.13.3
+uvicorn==0.45.0

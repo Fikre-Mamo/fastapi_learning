@@ -28,7 +28,7 @@ Data is stored **in-memory** (a plain Python list/dict) — no database yet. The
 
 ## 📦 Stack
 
-- **Python 3.11+**
+- **Python 3.9+**
 - **FastAPI** — the web framework
 - **Uvicorn** — the ASGI server that runs the app
 
@@ -40,7 +40,7 @@ That's it. No database, no ORM, no Docker — intentionally bare so the fundamen
 
 **1. Clone the repo**
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://github.com/Fikre-Mamo/fastapi.git
 cd your-repo-name
 ```
 

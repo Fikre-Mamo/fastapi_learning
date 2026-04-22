@@ -1,5 +1,9 @@
+annotated-doc==0.0.4
 annotated-types==0.7.0
-anyio==4.13.0
 fastapi==0.136.0
+fastapi_static_files==0.1.0
 pydantic==2.13.3
+pydantic_core==2.46.3
+typing-inspection==0.4.2
+typing_extensions==4.15.0
 uvicorn==0.45.0

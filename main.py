@@ -1,7 +1,6 @@
 from fastapi import FastAPI, Request
 from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
-from h11 import Data
 from pydantic import BaseModel
 from typing import Optional
 from fastapi.templating import Jinja2Templates

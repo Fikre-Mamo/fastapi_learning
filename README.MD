@@ -57,7 +57,7 @@ source venv/bin/activate
 
 **3. Install dependencies**
 ```bash
-pip install fastapi uvicorn
+pip install -r requirements.txt
 ```
 
 **4. Start the server**

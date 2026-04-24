@@ -6,7 +6,7 @@
 
 ## 📖 Why I Built This
 
-I wanted to understand how modern Python APIs are built. FastAPI kept coming up as the go to framework for data engineers and backend developers, so I decided to stop reading about it and start building with it. This project is my hands-on introduction.
+I wanted to understand how modern Python APIs are built. FastAPI kept coming up as the go to framework for data engineers and backend developers, so I decided to stop reading about it and start building with it. This project is my hands-on introduction. And also becouse it's funny 🤣
 
 ---
 

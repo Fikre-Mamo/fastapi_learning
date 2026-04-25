@@ -19,6 +19,7 @@ BOOKS = [
 # Add a new books to the list
 BOOKS.append({"id": 4, "title": "Fourth Book", "author": "Author Four"})
 BOOKS.append({"id": 5, "title": "Fifth Book", "author": "Author Five"})
+BOOKS.append({"id": 6, "title": "Sixth Book", "author": "Author Six"})
 
 # create the read_root endpoint
 @app.get("/")

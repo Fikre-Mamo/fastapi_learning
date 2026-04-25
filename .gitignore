@@ -1,2 +1,7 @@
 __pycache__
 fastapi
+.vscode
+__pycache__
+*.pyc
+*.pyo
+*.pyd

@@ -11,15 +11,15 @@ app = FastAPI()
 
 # Create the books list
 BOOKS = [
-    {"id": 1, "title": "First Book", "author": "Author One"},
-    {"id": 2, "title": "Second Book", "author": "Author Two"},
-    {"id": 3, "title": "Third Book", "author": "Author Three"}
+    {"id": 1, "title": "First Book", "author": "Author One", "category": "Bio"},
+    {"id": 2, "title": "Second Book", "author": "Author Two", "category": "Art"},
+    {"id": 3, "title": "Third Book", "author": "Author Three", "category": "Science"}
 ]
 
 # Add a new books to the list
-BOOKS.append({"id": 4, "title": "Fourth Book", "author": "Author Four"})
-BOOKS.append({"id": 5, "title": "Fifth Book", "author": "Author Five"})
-BOOKS.append({"id": 6, "title": "Sixth Book", "author": "Author Six"})
+BOOKS.append({"id": 4, "title": "Fourth Book", "author": "Author Four", "category": "Bio"})
+BOOKS.append({"id": 5, "title": "Fifth Book", "author": "Author Five", "category": "Art"})
+BOOKS.append({"id": 6, "title": "Sixth Book", "author": "Author Six", "category": "Science"})
 
 # create the read_root endpoint
 @app.get("/")
@@ -30,6 +30,25 @@ def read_root():
 @app.get("/books")
 def read_books():
     return BOOKS
+
+# create the read_category_by_query endpoint
+@app.get("/books/")
+def read_category_by_query(category: str):
+    books_to_return = []
+    for book in BOOKS:
+        if book.get("category").casefold() == category.casefold():
+            books_to_return.append(book)
+    return books_to_return
+
+# create the read_books_by_author endpoint
+@app.get("/books/{book_author}")
+def read_books_by_author(book_author: str, category: Optional[str] = None):
+    books_to_return = []
+    for book in BOOKS:
+        if book.get("author").casefold() == book_author.casefold() or \
+        (category is None or book.get("category").casefold() == category.casefold()):
+            books_to_return.append(book)
+    return books_to_return
 
 # create the read_only_books endpoint
 @app.get("/book/{read_book}")

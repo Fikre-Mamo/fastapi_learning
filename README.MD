@@ -41,7 +41,7 @@ That's it. No database, no ORM, no Docker — intentionally bare so the fundamen
 **1. Clone the repo**
 ```bash
 git clone https://github.com/Fikre-Mamo/fastapi_learning.git
-cd your-repo-name
+cd fastapi_learning
 ```
 
 **2. Create and activate a virtual environment**
